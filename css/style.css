@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+ font-family: 'Poppins', sans-serif;
+ line-height: 2;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.548), rgba(73, 50, 50, 0.521)), url('../img/Cake1.jpeg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color:#44383e;
+    text-shadow: 0 0 3px rgba(92, 49, 49, 0.322), 0 0 5px #d3c3c3; 
+}
+
+.heading-main {
+display: block;
+font-size: 5rem;
+letter-spacing: 1.1rem;
+animation-name: moveInLeft;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    color: #e4cdb9;
+    display: inline-block;
+    font-size: 3rem;
+    border-bottom: 0.2rem solid #e4cdb9;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    padding: 1rem;
+    transition: all 0.3s;
+    text-shadow: 0 0 3px rgba(92, 49, 49, 0.322), 0 0 5px #d3c3c3; 
+}
+
+.btn:hover {
+    background-color: rgba(228, 200, 200, 0.171);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.main {
+    height: 95vh;
+    background-color: #e6c2b4;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
+    margin-top: -5rem;
+
+}
+
+.main h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #44383e;
+    text-shadow: 0 0 3px rgba(92, 49, 49, 0.322), 0 0 5px #d3c3c3; 
+
+}
+
+.gallery {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(92, 49, 49, 0.322);
+    transform: scale(1.1);
+    z-index: 30;
+}
+.gallery_photo {
+    width: 400px;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    outline-offset: 1rem;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo-1 {
+    width: 380px;
+    top: 8%;
+    left: 20%;
+}
+
+.gallery_photo-2 {
+    top: 8%;
+    left: 55%;
+}
+
+.gallery_photo-3 {
+    width: 400px;
+    top: 28%;
+    left: 35%;
+
+}
+
+.footer {
+    height: 200px;
+    text-align: center;
+    color: #65535c;
+    font-size: 1.3rem;
+    padding: 2rem;
+    }
+
+.footer ul li {
+display: inline-block;
+margin: 1rem;
+
+    }
+
+.footer ul li a {
+    text-decoration: none;
+    color: #65535c;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgb(179, 84, 119);
+    transform: scale(1.2);
+}
